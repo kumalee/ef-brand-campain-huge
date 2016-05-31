@@ -1,0 +1,24 @@
+{
+  "name": "ef-brand-campain-huge",
+  "description": "ef brand campain huge",
+  "main": "index.js",
+  "authors": [
+    "Kuma Li"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ef",
+    "huge"
+  ],
+  "homepage": "https://github.com/kumalee/ef-brand-campain-huge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Swiper": "swiper#^3.3.1"
+  }
+}
