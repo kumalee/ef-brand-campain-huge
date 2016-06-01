@@ -2,22 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-title" content="EF Quzzie">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="address=no">
+    <script type="text/javascript" src="flexible.js"></script>
+    <title>EF Campain</title>
   </head>
   <body>
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
+    <img class="icon-logo" src="./images/icon-logo.png" alt="EF Logo" />
+    <img class="icon-phone" src="./images/icon-phone.png" alt="EF Phone" />
+    <div class="swiper-container" id="mainSwiper">
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide slide-1">Slide 1</div>
-            <div class="swiper-slide slide-2">Slide 2</div>
-            <div class="swiper-slide slide-3">Slide 3</div>
-            <div class="swiper-slide slide-4">Slide 4</div>
-            <div class="swiper-slide slide-5">Slide 5</div>
-            <div class="swiper-slide slide-6">Slide 6</div>
-            <div class="swiper-slide slide-7">Slide 7</div>
+            <div class="swiper-slide slide-1">
+              <div class="desc">
+                <h1>力争上游</h1>
+                <p>英语有多好</p>
+                <p>职场就有多大</p>
+              </div>
+              <div class="subscribe">
+                <p>本月免费订阅「每日英语」</p>
+                <p>赢胡歌同款耳机</p>
+              </div>
+              <button class="btn-subscribe">免费订阅</button>
+              <img class="icon-arrow-up" src="./images/icon-arrow-up.png" alt="arrow-up" />
+            </div>
+            <div class="swiper-slide slide-2">
+              <div class="swiper-container" id="subSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-5">
+
+                  </div>
+                  <div class="swiper-slide slide-4">
+
+                  </div>
+                  <div class="swiper-slide slide-6">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-23">
+
+            </div>
+            <div class="swiper-slide slide-7">
+
+            </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
