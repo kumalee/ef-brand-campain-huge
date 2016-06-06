@@ -3,13 +3,19 @@ require('!style!css!./swiper.css');
 require('!style!css!sass!./main.scss');
 
 var mySwiper = new Swiper('#mainSwiper', {
-    speed: 400,
     direction: 'vertical'
 });
 var mySwiperSub = new Swiper('#subSwiper', {
-    speed: 400,
     direction: 'horizontal',
     initialSlide: 1
+});
+var mySwiperThird = new Swiper('#thirdSwiper', {
+    direction: 'horizontal',
+    initialSlide: 0,
+    effect: 'fade',
+    fade: {
+      crossFade: false
+    }
 });
 var subscribes = document.getElementsByClassName('btn-subscribe');
 subscribes = Array.prototype.slice.call(subscribes);
@@ -17,4 +23,13 @@ subscribes.forEach(function(element,index){
   element.addEventListener('touchstart', function(e){
     mySwiper.slideTo(6);
   })
+});
+document.getElementById('btn-campaign-reward').addEventListener('touchstart', function(e){
+  mySwiperThird.slideTo(1);
+});
+document.getElementsByClassName('campaign-detail-cover')[0].addEventListener('touchstart', function(e){
+  mySwiperThird.slideTo(0);
+});
+document.getElementsByClassName('campaign-detail-content')[0].addEventListener('touchstart', function(e){
+  mySwiperThird.slideTo(0);
 });
