@@ -216,6 +216,20 @@ p {
       margin-bottom: 0.4rem;
     }
   }
+  .campaign-reward,
+  .campaign-detail {
+    position: absolute;
+    bottom: 0.3rem;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 0.5rem;
+  }
+  .campaign-detail {
+    right: 0.4rem;
+  }
+  .campaign-reward {
+    left: 0.4rem;
+  }
 }
 .slide-7 {
   background-image:url('./images/page-7.jpg');
