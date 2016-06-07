@@ -1,11 +1,10 @@
-require('!style!css!./reset.css');
-require('!style!css!./swiper.css');
-require('!style!css!sass!./main.scss');
+require('./main.scss');
+require('./swiper.min.js')
 
 var mySwiper = new Swiper('#mainSwiper', {
     direction: 'vertical'
 });
-var mySwiperSub = new Swiper('#subSwiper', {
+new Swiper('#subSwiper', {
     direction: 'horizontal',
     initialSlide: 1
 });

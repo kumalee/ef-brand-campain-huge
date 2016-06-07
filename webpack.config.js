@@ -17,13 +17,13 @@ module.exports = {
     path.resolve(__dirname, 'app/main.js')
   ],
   output: {
+    path: __dirname + '/build',
     publicPath: '/',
     filename: "main.js"
   },
   module: {
     loaders: [
       { test: /\.scss$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader!sass-loader' }, // use ! to chain loaders
-      { test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader' },
       { test: /\.(png|jpg)$/, include: path.resolve(__dirname, 'app'), loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
     ]
   },

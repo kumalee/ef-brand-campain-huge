@@ -35,3 +35,6 @@ bower_components
 
 # Mac OSX file
 .DS_Store
+
+# project generate directory
+build
