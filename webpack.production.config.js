@@ -6,13 +6,14 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'hidden-source-map',
-  entry: [
-    path.resolve(__dirname, 'app/main.js')
-  ],
+  entry: {
+    'main': path.resolve(__dirname, 'app/main.js'),
+    'thanks': path.resolve(__dirname, 'app/thanks.js')
+  },
   output: {
     path: __dirname + '/build',
     publicPath: '/',
-    filename: "main.js"
+    filename: "[name].js"
   },
   module: {
     loaders: [
@@ -27,9 +28,10 @@ module.exports = {
         warnings: false
       }
     }),
-    new ExtractTextPlugin("./css/main.css"),
+    new ExtractTextPlugin("./css/[name].css"),
     new CopyWebpackPlugin([
       { from: './app/index.html', to: 'index.html' },
+      { from: './app/thanks.html', to: 'thanks.html' },
       { from: './app/flexible.js', to: 'flexible.js' }
     ]),
   ]
