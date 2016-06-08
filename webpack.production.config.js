@@ -18,7 +18,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.scss$/, include: path.resolve(__dirname, 'app'), loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader?souceMap")}, // use ! to chain loaders
-      { test: /\.(png|jpg)$/, include: path.resolve(__dirname, 'app'), loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
+      { test: /\.(png|jpg|webp)$/, include: path.resolve(__dirname, 'app'), loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
     ]
   },
   plugins: [
@@ -32,7 +32,9 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './app/index.html', to: 'index.html' },
       { from: './app/thanks.html', to: 'thanks.html' },
-      { from: './app/flexible.js', to: 'flexible.js' }
+      { from: './app/flexible.js', to: 'flexible.js' },
+      { from: './app/webpjs-0.0.2.min.js', to: 'webpjs-0.0.2.min.js' },
+      { from: './app/webpjs-0.0.2.swf', to: 'webpjs-0.0.2.swf' }
     ]),
   ]
 };
