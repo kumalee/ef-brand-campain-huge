@@ -1,6 +1,6 @@
 require('./main.scss');
+require('./main-image.scss');
 require('./swiper.min.js');
-
 
 var mySwiper = new Swiper('#mainSwiper', {
     direction: 'vertical'

@@ -11,11 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="format-detection" content="address=no,telephone=no">
-    <script type="text/javascript" src="flexible.js"></script>
-    <script>(function(){var WebP=new Image();WebP.onload=WebP.onerror=function(){
-if(WebP.height!=2){var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;
-var s=document.getElementsByTagName('script')[0];sc.src='webpjs-0.0.2.min.js';s.parentNode.insertBefore(sc,s);}};
-WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';})();</script>
+    <script type="text/javascript" src="preload.js"></script>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
     <title>EF Campain</title>
   </head>
@@ -32,69 +28,10 @@ WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0
               </div>
               <div class="subscribe">
                 <p>本月免费订阅「每日英语」</p>
-                <p>赢胡歌同款耳机</p>
+                <p>赢胡歌签名好礼</p>
               </div>
               <button class="btn-subscribe">免费订阅</button>
               <i class="icon-arrow-up"></i>
-            </div>
-            <div class="swiper-slide slide-2">
-              <div class="swiper-container" id="subSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide-5">
-                    <i class="icon-logo"></i>
-                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
-                    <div class="desc-back"></div>
-                    <div class="desc">
-                      <h3>「每日英语」之视频教学</h3>
-                      <ul>
-                        <li><i class="icon icon-5-1"></i>每天一个新主题</li>
-                        <li><i class="icon icon-5-2"></i>好莱坞风格影片</li>
-                        <li><i class="icon icon-5-3"></i>还原真实的场景</li>
-                      </ul>
-                      <div class="icon-arrow-right"></div>
-                    </div>
-                    <button class="btn-subscribe">免费订阅</button>
-                    <i class="icon-arrow-up"></i>
-                  </div>
-                  <div class="swiper-slide slide-4">
-                    <i class="icon-logo"></i>
-                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
-                    <div class="title">
-                      <h1>英语有多好，职场有多大</h1>
-                      <p>请相信，你可以，自如地与外国同事谈话</p>
-                    </div>
-                    <div class="desc-back"></div>
-                    <div class="desc">
-                      <h3>「每日英语」之实用职场英语</h3>
-                      <ul>
-                        <li><i class="icon icon-4-1"></i>电话会议</li>
-                        <li><i class="icon icon-4-2"></i>英文演讲</li>
-                        <li><i class="icon icon-4-3"></i>邮件书写</li>
-                      </ul>
-                      <div class="icon-arrow-left"></div>
-                      <div class="icon-arrow-right"></div>
-                    </div>
-                    <button class="btn-subscribe">免费订阅</button>
-                    <i class="icon-arrow-up"></i>
-                  </div>
-                  <div class="swiper-slide slide-6">
-                    <i class="icon-logo"></i>
-                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
-                    <div class="desc-back"></div>
-                    <div class="desc">
-                      <h3>「每日英语」之量身定制</h3>
-                      <ul>
-                        <li><i class="icon icon-6-1"></i>外籍培训专家研发</li>
-                        <li><i class="icon icon-6-2"></i>可自定义学习级别</li>
-                        <li><i class="icon icon-6-3"></i>一点一滴学习进步</li>
-                      </ul>
-                      <div class="icon-arrow-left"></div>
-                    </div>
-                    <button class="btn-subscribe">免费订阅</button>
-                    <i class="icon-arrow-up"></i>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="swiper-slide slide-23">
               <div class="swiper-container" id="thirdSwiper">
@@ -145,6 +82,68 @@ WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0
                       <p>活动规则：请留下正确的联系信息（邮箱及手机）方便我们发送获奖信息</p>
                       <i class="icon-close"></i>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <div class="swiper-container" id="subSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-5">
+                    <i class="icon-logo"></i>
+                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
+                    <div class="desc-back"></div>
+                    <div class="desc">
+                      <h3>「每日英语」之视频教学</h3>
+                      <hr />
+                      <ul>
+                        <li><i class="icon icon-5-1"></i>每天一个新主题</li>
+                        <li><i class="icon icon-5-2"></i>视觉化学习方式</li>
+                        <li><i class="icon icon-5-3"></i>还原真实的场景</li>
+                      </ul>
+                      <div class="icon-arrow-right"></div>
+                    </div>
+                    <button class="btn-subscribe">免费订阅</button>
+                    <i class="icon-arrow-up"></i>
+                  </div>
+                  <div class="swiper-slide slide-4">
+                    <i class="icon-logo"></i>
+                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
+                    <div class="title">
+                      <h1>英语有多好，职场有多大</h1>
+                      <p>请相信，你可以，自如地与外国同事谈话</p>
+                    </div>
+                    <div class="desc-back"></div>
+                    <div class="desc">
+                      <h3>「每日英语」之实用职场英语</h3>
+                      <hr />
+                      <ul>
+                        <li><i class="icon icon-4-1"></i>电话会议</li>
+                        <li><i class="icon icon-4-2"></i>英文演讲</li>
+                        <li><i class="icon icon-4-3"></i>邮件书写</li>
+                      </ul>
+                      <div class="icon-arrow-left"></div>
+                      <div class="icon-arrow-right"></div>
+                    </div>
+                    <button class="btn-subscribe">免费订阅</button>
+                    <i class="icon-arrow-up"></i>
+                  </div>
+                  <div class="swiper-slide slide-6">
+                    <i class="icon-logo"></i>
+                    <a href="tel:4008203015"><i class="icon-phone"></i></a>
+                    <div class="desc-back"></div>
+                    <div class="desc">
+                      <h3>「每日英语」之量身定制</h3>
+                      <hr />
+                      <ul>
+                        <li><i class="icon icon-6-1"></i>外籍培训专家研发</li>
+                        <li><i class="icon icon-6-2"></i>可自定义学习级别</li>
+                        <li><i class="icon icon-6-3"></i>一点一滴学习进步</li>
+                      </ul>
+                      <div class="icon-arrow-left"></div>
+                    </div>
+                    <button class="btn-subscribe">免费订阅</button>
+                    <i class="icon-arrow-up"></i>
                   </div>
                 </div>
               </div>
