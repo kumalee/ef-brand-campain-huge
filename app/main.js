@@ -9,14 +9,6 @@ new Swiper('#subSwiper', {
     direction: 'horizontal',
     initialSlide: 1
 });
-var mySwiperThird = new Swiper('#thirdSwiper', {
-    direction: 'horizontal',
-    initialSlide: 0,
-    effect: 'fade',
-    fade: {
-      crossFade: false
-    }
-});
 var subscribes = document.getElementsByClassName('btn-subscribe');
 subscribes = Array.prototype.slice.call(subscribes);
 subscribes.forEach(function(element,index){
@@ -25,11 +17,15 @@ subscribes.forEach(function(element,index){
   })
 });
 document.getElementById('btn-campaign-reward').addEventListener('touchstart', function(e){
-  mySwiperThird.slideTo(1);
+  toggleDetail('block');
 });
+var toggleDetail = function(toggle){
+  document.getElementsByClassName('campaign-detail-cover')[0].style.display = toggle;
+  document.getElementsByClassName('campaign-detail-content')[0].style.display = toggle;
+}
 document.getElementsByClassName('campaign-detail-cover')[0].addEventListener('touchstart', function(e){
-  mySwiperThird.slideTo(0);
+  toggleDetail('none');
 });
 document.getElementsByClassName('campaign-detail-content')[0].addEventListener('touchstart', function(e){
-  mySwiperThird.slideTo(0);
+  toggleDetail('none');
 });

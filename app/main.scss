@@ -215,6 +215,9 @@ body {
   }
 }
 .slide-23 {
+  .icon-logo, .icon-phone {
+    z-index: 99999;
+  }
   .title {
     margin: 4.3rem 0.5rem;
     color: #fff;
@@ -267,6 +270,7 @@ body {
     background: #000;
     opacity: 0.8;
     z-index: 9999;
+    display: none;
   }
   .campaign-detail-content {
     position: absolute;
@@ -279,10 +283,19 @@ body {
     z-index: 99999;
     background: #666;
     padding: 0.5rem;
+    display: none;
+    text-align: center;
 
     p {
       line-height: 1.2;
       margin-bottom: 0.2rem;
+      text-align: left;
+    }
+
+    .btn-subscribe {
+      position: static;
+      transform: none;
+      margin: 0.2rem auto 0;
     }
 
     .icon-close {
