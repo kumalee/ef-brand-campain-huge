@@ -36,11 +36,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './app/index.html', to: 'index.html' },
       { from: './app/thanks.html', to: 'thanks.html' },
-      { from: './app/flexible.js', to: 'flexible.js' },
-      { from: './app/webpjs-loader.js', to: 'webpjs-loader.js' },
-      { from: './app/preload.js', to: 'preload.js'},
-      { from: './app/webpjs-0.0.2.min.js', to: 'webpjs-0.0.2.min.js' },
-      { from: './app/webpjs-0.0.2.swf', to: 'webpjs-0.0.2.swf' }
+      { from: './app/flexible.js', to: 'flexible.js' }
     ]),
   ]
 };

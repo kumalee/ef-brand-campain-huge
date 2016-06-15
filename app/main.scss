@@ -167,10 +167,12 @@ body {
     margin-top: 1.2rem;
 }
 .slide-1 {
+  background-position: left top;
 
   .title {
     margin: 3.8rem 0.8rem;
     color: #fff;
+    display: none;
 
     h1 {
       margin-bottom: 0.4rem;
@@ -214,12 +216,12 @@ body {
 }
 .slide-23 {
   .title {
-    margin: 4rem 0.5rem;
+    margin: 4.5rem 0.5rem;
     color: #fff;
 
     h1 {
       font-size: 0.5rem;
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.3rem;
       letter-spacing: 0;
       text-align: center;
       width: 5rem;
@@ -248,7 +250,7 @@ body {
     bottom: 0.3rem;
     text-decoration: underline;
     color: #fff;
-    font-size: 0.5rem;
+    font-size: 0.35rem;
   }
   .campaign-detail {
     right: 0.4rem;
