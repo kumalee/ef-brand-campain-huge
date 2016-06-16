@@ -1,5 +1,5 @@
 require('./main.scss');
-require('./main-image.scss');
+require('./main-images.scss')
 require('./swiper.min.js');
 
 var mySwiper = new Swiper('#mainSwiper', {
@@ -7,7 +7,8 @@ var mySwiper = new Swiper('#mainSwiper', {
 });
 new Swiper('#subSwiper', {
     direction: 'horizontal',
-    initialSlide: 1
+    initialSlide: 1,
+    loop: true
 });
 var subscribes = document.getElementsByClassName('btn-subscribe');
 subscribes = Array.prototype.slice.call(subscribes);
