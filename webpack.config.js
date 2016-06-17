@@ -17,8 +17,10 @@ module.exports = {
     'wpdev': 'webpack-dev-server/client?http://localhost:8080',
     'main': path.resolve(__dirname, 'app/main.js'),
     'main-persona-3': path.resolve(__dirname, 'app/main-persona-3.js'),
+    'main-persona-4': path.resolve(__dirname, 'app/main-persona-4.js'),
     'thanks': path.resolve(__dirname, 'app/thanks.js'),
-    'thanks-persona-3': path.resolve(__dirname, 'app/thanks-persona-3.js')
+    'thanks-persona-3': path.resolve(__dirname, 'app/thanks-persona-3.js'),
+    'main-persona-4': path.resolve(__dirname, 'app/main-persona-4.js')
   },
   output: {
     path: __dirname + '/build',

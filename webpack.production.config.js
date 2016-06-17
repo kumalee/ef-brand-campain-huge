@@ -8,10 +8,12 @@ var autoprefixer = require('autoprefixer');
 module.exports = {
   devtool: 'hidden-source-map',
   entry: {
-    'main': path.resolve(__dirname, 'app/main.js'),
-    'main-persona-3': path.resolve(__dirname, 'app/main-persona-3.js'),
-    'thanks': path.resolve(__dirname, 'app/thanks.js'),
-    'thanks-persona-3': path.resolve(__dirname, 'app/thanks-persona-3.js')
+    'main': path.resolve(__dirname, 'app/main.prod.js'),
+    'main-persona-3': path.resolve(__dirname, 'app/main-persona-3.prod.js'),
+    'main-persona-4': path.resolve(__dirname, 'app/main-persona-4.prod.js'),
+    'thanks': path.resolve(__dirname, 'app/thanks.prod.js'),
+    'thanks-persona-3': path.resolve(__dirname, 'app/thanks-persona-3.prod.js'),
+    'thanks-persona-4': path.resolve(__dirname, 'app/thanks-persona-4.prod.js')
   },
   output: {
     path: __dirname + '/build',
@@ -37,9 +39,11 @@ module.exports = {
     new ExtractTextPlugin("./css/[name].css"),
     new CopyWebpackPlugin([
       { from: './app/index.html', to: 'index.html' },
-      { from: './app/index.html', to: 'index-persona-3.html' },
+      { from: './app/index-persona-3.html', to: 'index-persona-3.html' },
+      { from: './app/index-persona-4.html', to: 'index-persona-4.html' },
       { from: './app/thanks.html', to: 'thanks.html' },
-      { from: './app/thanks.html', to: 'thanks-persona-3.html' },
+      { from: './app/thanks-persona-3.html', to: 'thanks-persona-3.html' },
+      { from: './app/thanks-persona-4.html', to: 'thanks-persona-4.html' },
       { from: './app/flexible.js', to: 'flexible.js' }
     ]),
   ]

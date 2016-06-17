@@ -1,5 +1,5 @@
-require('./main.scss');
-require('./main-image.scss');
+require('./main-persona-4.scss');
+require('./main-image-persona-4.scss');
 require('./swiper.min.js');
 
 var mySwiper = new Swiper('#mainSwiper', {
