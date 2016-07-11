@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
 }
 .icon-logo {
-  background-image:url('./images/icon-logo.png');
+  background-image:url('./images/icon-logo-black.png');
   width: 1.8rem;
   height: 1.3rem;
   background-size: 1.8rem 1.3rem;
@@ -40,7 +40,7 @@ body {
   right: 0.4rem;
   width: 0.78rem;
   height: 0.76rem;
-  background-image: url('./images/icon-phone.png');
+  background-image: url('./images/icon-phone-black.png');
   background-size: 0.78rem 0.76rem;
 }
 .swiper-container {
@@ -169,6 +169,14 @@ body {
 .slide-1 {
   background-position: left top;
 
+  .icon-logo{
+    display: none;
+  }
+
+  .icon-phone {
+    background-image: url('./images/icon-phone.png');
+  }
+
   .title {
     margin: 3.8rem 0.8rem;
     color: #fff;
@@ -220,15 +228,15 @@ body {
     z-index: 99999;
   }
   .title {
-    padding: 4.8rem 0.5rem;
+    padding: 8.6rem 0;
     color: #fff;
+    text-align: center;
 
     h1 {
       font-size: 0.5rem;
       margin-bottom: 0.3rem;
       letter-spacing: 0;
       text-align: center;
-      width: 5rem;
     }
   }
   .desc {
@@ -373,4 +381,27 @@ body {
 }
 .icon-23-3 {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAB+UlEQVRIS9WWTUhVURSFv6UVKEQJQRQo6CSwQQ0KjAYNg2iWYwkCx0pQFERBkUYEDYoMhaJJ0SgqDAMlCJRo0iCChtUgguzHCPMnVuw4b9DNp/feV4p3ci+8fc631tn77P1k+yYr9Mi2gZPA9DJqaADOV+BNkr4sF9z2RuDzH3Db7UB3RsRLSUNFhdleD9Rn1k1LmqkGbwO6MgteSbpbAv4C2JFZ1yvp8oLwooDF4m0H/IykexFnO95PqsJtHwQe5BTxXtLWarGF4UnhBkA5BMxIqnpDCsNttwCHgboc8A+Sri3hPH/ObUdwT07nk5KOLgKPlKzL/P5J0tR/L7glivHve57jqP9JyOp0bnsNcAI4FNcXuA1ckvTT9m5gC/BI0pzt7cA2YETS98qxlXZu+zqwDziV2udZ4CEwmoRMAm+BMeB4+p4HbgAdkjpLwdOi2Lxd0uvUF3YCz4BKdX8F+oFW4AIwkYR2AAPR8crCm4E3QEMMiASPATIFbAaagE3AuPR7ZkXfCBETkmZrOnbb0fnC8R3gdNos3O0HjgHRv78Bz4HHQB8Qo/odMAjskXSklPPkdBdwP/35iOKLsXkg5TZcfwSuJsfnUi1cjHwDVyTdKg1PAhqBvcn5U0k/ijSAmuBFQAvFZuHDwFytmxZYvzZSFSUZU2xFnl9UTGbNoEvPeQAAAABJRU5ErkJggg==');
+}
+.slide-7 {
+  .icon-logo{
+    background-image:url('./images/icon-logo.png');
+  }
+  .icon-phone {
+    background-image: url('./images/icon-phone.png');
+  }
+}
+
+.slide-1, .slide-23, .slide-2{
+  .subscribe,
+  .title,
+  .desc-back,
+  h3,
+  hr,
+  ul{
+    display: none;
+  }
+  .desc .icon-arrow-left,
+  .desc .icon-arrow-right{
+    display: block !important;
+  }
 }
